@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam</title>
+  <link rel="stylesheet" href="examcss.css">
+  <script defer src="examjs.js"></script>
+</head>
+
+<body>
+	<div class="content">
+		<div id="timer">
+			<div class="header"> Aisect University Practical Exam </div>
+    <div class="counter-container">
+        <div class="min-container">
+            <div class="digit-container">
+                <div class="digit-upper min2upper"></div>
+                <div class="digit-lower min2lower"></div>
+            </div>
+            <div class="digit-container">
+                <div class="digit-upper min1upper"></div>
+                <div class="digit-lower min1lower"></div>
+            </div>
+        </div>
+
+        <div class="min-text-container">
+            <span class="unit"> </span>
+        </div>
+
+        <div class="sec-container">
+            <div class="digit-container">
+                <div class="digit-upper sec2upper"></div>
+                <div class="digit-lower sec2lower"></div>
+            </div>
+            <div class="digit-container">
+                <div class="digit-upper sec1upper"></div>
+                <div class="digit-lower sec1lower"></div>
+            </div>
+        </div>
+
+    <div class="sec-text-container">
+       <span class="unit">  </span>
+    </div>
+</div>
+
+</div>
+</div>
+		</div>
+	</div>
+	<div class="opdf" style="position:fixed; top:20%;height:100%;width:100%">
+	<embed src="3rdExam.pdf#zoom=150%&toolbar=0&scrollbar=1&toolbar=0&statusbar=1&navpanes=1&view=FitH&zoom=scale&page=pagenum" width="100%" height="100%"  frameBorder="11px"  style="position:absolute" />
+	</div>
+</body>
+<script language ="javascript">
+function Disable() {
+if (event.button == 2) 
+{
+alert("This action is not possible")
+}
+}
+document.onmousedown=Disable;
+
+
+function preventBack() {
+            window.history.forward(); 
+        }
+          
+        setTimeout("preventBack()", 0);
+          
+        window.onunload = function () { null };
+		
+</script>
+
+</html>

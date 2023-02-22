@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+
+let params = `resizable=no,status=no,location=no,toolbar=no,menubar=no,
+width=0,height=0,left=-1000,top=-1000`;
+
+open('Exam.html', 'test', params);
+</script>
+<body>
+	<h2>
+		<center>
+		Plz open the popup windows form above browser!<br>
+		Make Sure this popup window is only open one time!<br>
+		Don't Close this popup window, when exam time is over this popup will auto close.
+		<br>
+		<br>
+		<br>
+		<h1>
+			Make sure your exam timmer will automatically start after that don't press cross button. 
+		</h1>
+		</center>
+		
+	</h2>
+</body>
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+<script language ="javascript">
+function Disable() {
+if (event.button == 2) 
+{
+alert("This action is not possible")
+}
+}
+document.onmousedown=Disable;
+
+
+function preventBack() {
+            window.history.forward(); 
+        }
+          
+        setTimeout("preventBack()", 0);
+          
+        window.onunload = function () { null };
+		
+</script>
